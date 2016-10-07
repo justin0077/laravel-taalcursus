@@ -20,7 +20,7 @@
                 <div class="panel-heading">Cursussen</div>
 
                 <div class="panel-body">
-                    
+
                 </div>
             </div>
         </div>
