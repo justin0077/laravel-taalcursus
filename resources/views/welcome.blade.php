@@ -43,7 +43,7 @@
         <div class="navbar-collapse collapse navbar-right page-scroll">
             <ul class="nav navbar-nav">
                 <li class="active page-scroll"><a href="#page-top">HOME</a></li>
-                <li><a href="#cursus">CURSUSSEN</a></li>
+                <li><a href="#cursus">CURSUSSEN!</a></li>
                 <li><a href="#overons">OVER ONS</a></li>
                 <li><a href="#cwrap">CONTACT</a></li>
             </ul>
