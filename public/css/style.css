@@ -247,10 +247,10 @@ a:focus {
 /* Portfolio Wrap */
 #overons {
 	padding-top: 70px;
-	margin-bottom: 100px;
+	margin-bottom: 0px;
 	margin-top: 0px;
 	display: block;
-	text-align: center
+	text-align: center;
 }
 
 #overons h3 {
