@@ -42,9 +42,11 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    &nbsp;
+                    <li><a href="{{ url('/home') }}">Dashboard</a></li>
+                    <li><a href="{{ url('/admin') }}">Admin Panel</a></li>
+                    <li><a href="{{ url('/cursus') }}">Cursussen</a></li>
+                    <li><a href="{{ url('/facturen') }}">Facturen</a></li>
                 </ul>
-
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->

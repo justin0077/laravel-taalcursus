@@ -3909,17 +3909,17 @@ tbody.collapse.in {
       margin-right: 0; } }
 
 .navbar-default {
-  background-color: #fff;
+  background-color: #343434;
   border-color: #d3e0e9; }
   .navbar-default .navbar-brand {
-    color: #777; }
+    color: #fff; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-      color: #5e5e5e;
+      color: #fff;
       background-color: transparent; }
   .navbar-default .navbar-text {
-    color: #777; }
+    color: #fff; }
   .navbar-default .navbar-nav > li > a {
-    color: #777; }
+    color: #fff; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
       color: #333;
       background-color: transparent; }
