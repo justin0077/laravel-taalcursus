@@ -12,6 +12,9 @@
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+
 
     <!-- Scripts -->
     <script>
@@ -44,7 +47,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/home') }}">Dashboard</a></li>
                     <li><a href="{{ url('/admin') }}">Admin Panel</a></li>
-                    <li><a href="{{ url('/cursus') }}">Cursussen</a></li>
+                    <li><a href="{{ url('/index') }}">Cursussen</a></li>
                     <li><a href="{{ url('/facturen') }}">Facturen</a></li>
                 </ul>
                 <!-- Right Side Of Navbar -->
@@ -54,6 +57,12 @@
                         <li><a href="{{ url('/login') }}">Login</a></li>
                         <li><a href="{{ url('/register') }}">Register</a></li>
                     @else
+                        <li>
+                            <a href="{{ route('product.shoppingCart') }}">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>Shopping cart
+                                <span class="badge">{{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</span>
+                            </a>
+                        </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                 {{ Auth::user()->name }} <span class="caret"></span>
@@ -83,5 +92,8 @@
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+    <script   src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    @yield('scripts')
 </body>
 </html>

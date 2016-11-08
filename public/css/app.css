@@ -4304,6 +4304,7 @@ a.badge:hover, a.badge:focus {
   .thumbnail a > img {
     display: block;
     max-width: 100%;
+    max-height: 150px;
     height: auto;
     margin-left: auto;
     margin-right: auto; }
@@ -4315,6 +4316,7 @@ a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
   border-color: #3097D1; }
+
 
 .alert {
   padding: 15px;

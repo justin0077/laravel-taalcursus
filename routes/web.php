@@ -15,11 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-
-Route::get('/cursus', 'HomeController@index');
 
 Route::get('/facturen', 'HomeController@index');
 
@@ -36,6 +35,33 @@ Route::post('/admin/assign-roles', [
     'as' => 'admin.assign',
     'middleware' => 'roles',
     'roles' => ['Admin', 'Content', 'Financieel']
+]);
+
+Route::get('/index', [
+    'uses' => 'ProductController@getIndex',
+    'as' => 'product.index'
+]);
+
+Route::get('/add-to-cart/{id}', [
+    'uses' => 'ProductController@getAddToCart',
+    'as' => 'product.addToCart'
+]);
+
+Route::get('/shoppingCart', [
+    'uses' => 'ProductController@getCart',
+    'as' => 'product.shoppingCart'
+]);
+
+Route::get('/checkout', [
+    'uses' => 'ProductController@getCheckout',
+    'as' => 'checkout',
+    'middleware' => 'auth'
+]);
+
+Route::post('/checkout', [
+    'uses' => 'ProductController@postCheckout',
+    'as' => 'checkout',
+    'middleware' => 'auth'
 ]);
 
 
